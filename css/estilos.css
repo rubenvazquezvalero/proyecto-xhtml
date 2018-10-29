@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700,800,900|Montserrat:400,700,800,900|Raleway:400,700|Yesteryear|Audiowide|Orbitron|Russo+One|Squada+One');
+
+body {
+    margin: 0;
+    background-color: #ecebeb;
+	overflow-x: hidden;
+}
+
+#header {
+    position: relative;
+    z-index: 999;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sombra {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+/* Fuentes */
+.font-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+.font-mont {
+	font-family: 'Montserrat', sans-serif;
+}
+.font-muli{
+    font-family: 'Muli', sans-serif;
+}
+/* /Fuentes */
+
+#frontal {
+    height: 500px;
+    position: relative;
+}
+.fondo {
+    position: relative;
+    background-image: url("../img/redes.png");
+    background-color: #fff;
+    background-position: top;
+/*     background-size: cover; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.sombra-fondo {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0.4) 50%,rgba(0,0,0,.7) 100%);;
+}
+.titulo {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.titulo h1 {
+	font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    color: #fff;
+    text-shadow: 1px 1px 10px rgba(0,0,0,.5);
+    text-align: center;
+    line-height: 100px;
+    font-weight: 800;
+}
+/* Menú */
+.sombra-menu {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+.menu-bg {
+    background-color: #fff;
+}
+.menu {
+    border-top: 1px solid rgba(0,0,0,.1);
+    position: relative;
+}
+.menu .menu-nav {
+    list-style: none;
+    margin: 0 auto;
+    display: table;
+    padding: 0;
+    position: relative;
+}
+.menu .menu-nav [class*="menu-enlace"] {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.125em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(0,0,0,.5);
+    float: left;
+    padding: 30px 0;
+    z-index: 20;
+}
+.menu [class*="menu-item"]:hover [class*="menu-enlace"] {
+    color: rgba(0,0,0,.9)
+}
+.menu .menu-item-m {
+    margin-left: 2rem;
+}
+.menu [class*="menu-item"] {
+    float: left;
+    position: relative;
+}
+.menu .desp-menu {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    width: 120px;
+/*     display: none; */
+    position: absolute;
+    list-style: none;
+    top: 100%;
+    padding-left: 0;
+    margin: 0 auto;
+    z-index: -1;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    transform: translateY(-148px);
+    transition: transform 0.5s;
+}
+.menu .desp-menu .desp-item {
+    border-top: 1px solid rgba(0,0,0,.1);
+    background-color: #fff;
+    position: relative;
+}
+.menu .desp-menu .desp-link {
+    display: block;
+    padding: 8px 0px 8px 10px;
+    color: rgba(0,0,0,.5);
+    position: relative;
+}
+.menu [class*="menu-item"]:hover .desp-menu {
+    transform: translateY(0px);
+}
+.menu  .desp-link:hover {
+    color: rgba(0,0,0,.9)
+}
+/* /Menú */
+
+.articulo {
+    background-color: #fff;
+    padding: 3em;
+    border: 1px solid rgba(0,0,0,.1);
+}
+.articulo h2 {
+    font-size: 2.5em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+/*     text-align: center; */
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0,.2);
+    position: relative;
+    display: inline-block;
+    color: #3c3c3c;
+}
+.articulo h2::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    border-bottom: 2px solid #3c3c3c;
+    bottom: -20px;
+    left: 0;
+}
+.articulo p {
+    font-family: 'Muli', sans-serif;
+    line-height: 1.4em;
+    font-size: 1.3em;
+    color: #3c3c3c;
+}
+#footer {
+    background-color: #343a40;
+}
+.footer1 {
+    padding: 30px;
+}
+.footer2 {
+    font-family: 'Muli', sans-serif;
+    background-color: #23272b;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.7);
+    text-align: center;
+    padding: 15px;
+}
